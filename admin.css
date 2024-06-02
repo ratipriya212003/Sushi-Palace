@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(251, 67, 0);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mainline {
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: rgb(250, 245, 215);
+    width: 80%;
+    padding: 20px;
+    box-shadow: 10px 10px 0px 0px black;
+}
+
+.list {
+    overflow: hidden;
+    padding: 40px 40px 40px 40px;
+    text-align: right;
+}
+
+.list a {
+    margin: 10px;
+    color: #000000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.list a.active {
+    color: rgb(251, 67, 0);
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.socialmedia {
+    overflow: hidden;
+    padding: 4px 4px 4px 4px;
+    text-align: left;
+    margin: 28px 25px 26px 28px;
+}
+
+.socialmedia a {
+    color: rgb(251, 67, 0);
+    padding: 43px 23px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer-upper {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.footer-upper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links h4 {
+    margin: 0 0 10px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-lower {
+    text-align: center;
+    padding: 10px;
+    background-color: #ea510b;
+    color: white;
+}

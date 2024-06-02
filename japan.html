@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Sushi Palace</title>
+    <link rel="stylesheet" href="japan.css" />
+  </head>
+  <body>
+    <div class="mainline">
+      <div class="list">
+        <a href="admin.html">Admin</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">Our Story</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="japaneseheading">
+        <h1>ラーメン
+          <box-icon name='bowl-rice' type='solid' color='#ea510b' ></box-icon>
+        </h1>
+      </div>
+      <div class="heading">
+        <!-- <h1><div class="colorchange" id="japhead">ラーメン</div></h1> -->
+        <h1>
+          A Bowl of Love From
+          <div class="colorchange"><br />Japanese Cuisine</div>
+          <br />
+          to You
+        </h1>
+      </div>
+      <div class="content">
+        <p>Ramen is a traditional Japanaese noodle soup.It consists of Chinese <br>wheat noodles served in a meat or fish-based broth and uses <br> toppings such as sliced pork , nori and scolions.</p>
+     <button class="submit" onclick="orderNow()">Order Now</button>
+      </div>
+      <div class="main_image">
+        <img src="main_picture_2-removebg-preview.png" />
+        
+      </div>
+
+      <div class="socialmedia">
+        <box-icon name='facebook' type='logo' ></box-icon>
+        <a href="#facebook">Facebook</a>
+        <box-icon name='instagram-alt' type='logo' ></box-icon>
+        <a href="#insta">Instagram</a>
+        <box-icon name='gmail' type='logo' ></box-icon>
+        <a href="#gmail">Gmail</a>
+        
+      </div>
+    
+
+    <footer>
+      <section class="footer-upper">
+        <div class="container">
+          <div class="footer-links">
+            <h4>Shop & Learn</h4>
+            <ul>
+              <li>Food</li>
+              <li>Eatery</li>
+              <li>Japan</li>
+              <li>Celebration</li>
+              <li>Dumplings</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Sushi Palace</h4>
+            <ul>
+              <li>Find a Store</li>
+              <li>Sushi Fish</li>
+              <li>Financing</li>
+              <li>Ramen</li>
+              <li>Order Status</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Food & Business</h4>
+            <ul>
+              <li>Sushi Palace & Eatery</li>
+              <li>Shop for Collage</li>
+              <li>Sushi Palace & Business</li>
+              <li>Shop for Business</li>
+              <li>Jobs</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>About Sushi Palace</h4>
+            <ul>
+              <li>Newsroom</li>
+              <li>Sushi Palace Leadership</li>
+              <li>Investors</li>
+              <li>Envents</li>
+              <li>Contact Sushi Palace</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lower">
+        <p>Copyright © 2024 Sushi Palace</p>
+      </section>
+    </footer>
+  </div>
+  <script>
+    function orderNow() {
+        const tableNumber = prompt("Please enter your table number:");
+        if (tableNumber) {
+            localStorage.setItem('adminTable', tableNumber);
+            alert("Our waiter will reach to take order for table number " + tableNumber);
+        }
+    }
+</script>
+  </body>
+  
+</html>

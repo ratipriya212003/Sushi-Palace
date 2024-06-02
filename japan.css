@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(251, 67, 0);
+}
+.mainline {
+  border: rgb(251, 67, 0);
+  border-radius: 25px;
+  background-color: rgb(250, 245, 215);
+  width: 1060px;
+  height: 630px;
+  margin: 50px 20px 10px 250px;
+  outline: 1px solid rgb(237, 232, 232);
+  outline-offset: 18px;
+}
+
+.colorchange {
+  color: rgb(251, 67, 0);
+}
+.heading {
+  line-height: 0.7;
+  top: 50px;
+  padding: 9px 50px 40px 50px;
+}
+.japaneseheading {
+  font-size: large;
+  color: rgb(251, 67, 0);
+  /* text-decoration: underline wavy black 2px; */
+  margin: 4px 52px;
+}
+.main_image {
+  display: block;
+  margin: -350px 30px 20px 470px;
+}
+
+.list {
+  overflow: hidden;
+  padding: 40px 40px 40px 40px;
+  text-align: right;
+}
+.list a {
+  margin: 10px;
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.list a.active {
+  color: rgb(251, 67, 0);
+  /* text-decoration: underline black; */
+}
+.list a:hover {
+  text-decoration: underline;
+}
+
+.socialmedia {
+  overflow: hidden;
+  padding: 4px 4px 4px 4px;
+  text-align: left;
+  margin: 28px 25px 26px 28px;
+  /* border-bottom: 1px solid rgb(251, 67, 0); */
+}
+.socialmedia a {
+  color: rgb(251, 67, 0);
+  padding: 43px 23px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.content {
+  margin: -47px 43px;
+  text-align: left;
+  padding: 1px 7px 1px 5px;
+}
+.submit {
+  background-color: rgb(251, 67, 0);
+  border: 5px solid rgb(251, 67, 0);
+  outline: 1px solid black;
+  outline-offset: 3px;
+}
+.submit:hover {
+  animation: shake3856 0.3s linear infinite both;
+}
+
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}

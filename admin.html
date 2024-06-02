@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Admin - Sushi Palace</title>
+    <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+    <div class="mainline">
+        <div class="list">
+            <a href="japan.html">Home</a>
+            <a class="active" href="admin.html">Admin</a>
+        </div>
+        <div class="heading">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <div class="content">
+            <h2>Table Orders</h2>
+            <div id="tableOrders">
+                <p>No orders yet.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loadOrders() {
+            const tableNumber = localStorage.getItem('adminTable');
+            const tableOrders = document.getElementById('tableOrders');
+            if (tableNumber) {
+                tableOrders.innerHTML = `<p>Table Number: ${tableNumber}</p>`;
+            }
+        }
+        window.onload = loadOrders;
+    </script>
+</body>
+</html>
